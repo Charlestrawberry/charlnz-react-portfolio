@@ -1,0 +1,53 @@
+:root {
+    --primary: #fff;
+  }
+  
+
+
+.Home-btns .btns{
+  color: rgb(2, 28, 46);
+  background-color: white;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  margin-top: 32px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: hidden;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+}
+.btns:hover{
+  color: rgb(234, 237, 240);
+  background-color: rgb(1, 26, 36);
+  margin-top: 32px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  transition: 250ms;
+  outline-style: none;
+  border-style: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-shadow: cyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
