@@ -2,44 +2,59 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import Footer from './components/Footer';
 import Herosection from './components/Herosection';
+import ParallaxDemo from './components/ParallaxDemo';
+import './About.css';
 
 export const About = () => (
       <Container>
-  <div>
+  <div className='container'>
+    
+      
+
         <Herosection />
-        <br></br>
-        <h2>My SKills </h2>
 
-      <div className="row centre">
-        <div className='col-1'>
-        <span > <i class="fab fa-js"></i> JavaScript</span>
-        <span > <i class="fab fa-html5"></i> HTML</span>
-        <span > <i class="fab fa-css3"></i> CSS</span>
-        <span > <i class="fab fa-node"></i> Node.js</span>
-        <span > <i class="fab fa-react"></i> React</span>
-        <span > <i class="fab fa-bootstrap"></i> Bootstrap</span>
-        </div>
-
-        <div className="col-2">
-        <span > <i class="fab fa-wordpress"></i> Wordpress</span>
-        <span > <i class="fab fa-js"></i> VS code</span>
-        <span > <i class="fab fa-github"></i> GitHub</span>
-        <span > <i class="fab fa-gitter"></i> Netlify</span>
-        <span > <i class="fal fa-code"></i> Responsive Design</span>
-          
-        </div>
-      </div>  
-      <br></br>
+        
+        <ParallaxDemo />
+        
+        <div  className='about-header'>
         <div>
-          I have acquired good skills in React, React-bootstrap
-          bootstrap and wordpress.
-
+        <h2>MY SKILLS</h2>
         </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+        <div>
+         <p> I have acquired good skills in React, React-bootstrap
+          bootstrap and wordpress.</p>
+        </div>
+        
+      <div className="social-icon-items">
+        <div className='row'>
+        <div className='social-icon-links col-lg-6'>
+        <div><span > <i class="fab fa-js"></i> JavaScript</span></div>
+        <div><span > <i class="fab fa-html5"></i> HTML</span></div>
+        <div><span > <i class="fab fa-css3"></i> CSS</span></div>
+        
+        <div><span > <i class="fab fa-node"></i> Node.js</span></div>
+        <div><span > <i class="fab fa-react"></i> React</span></div>
+        <div><span > <i class="fab fa-bootstrap"></i> Bootstrap</span></div>
+        
+        </div>
+
+        <div className="social-icon-links col-lg-6 ">
+        <div><span > <i class="fab fa-wordpress"></i> Wordpress</span></div>
+        <div><span > <i class="fab fa-js"></i> VS code</span></div>
+        <div><span > <i class="fab fa-github"></i> GitHub</span></div>
+        
+        <div><span > <i class="fab fa-gitter"></i> Netlify</span></div>
+        <div><span > <i class="fal fa-code"></i> Responsive Design</span></div>
+        
+        </div>
+
+      </div> 
+      </div> 
+      
+      </div>
+      
+      
+      
       
     <div>
       <Footer />

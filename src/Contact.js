@@ -5,10 +5,18 @@ import RightSide from './components/RightSide';
 import Footer from './components/Footer'
 
 
+const social  =['facebook', 'github',  'twitter'];
+const socialList = social.map(social => <li>{social}</li>)
 
 
 export const Contact = () => (
     <div>
+      <div>
+        <ul>{socialList}</ul>
+      </div>
+
+
+      window.alert("Dont leave without saying hi");
         <h2>Contact Us</h2>
 
         <span><a target= "_blank" rel=''  href= "http://www.google.com"><Button> Click Me</Button></a></span>

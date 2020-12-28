@@ -29,12 +29,9 @@ export const NavigationBar = () =>(
                 <Nav.Item> <Nav.Link href= "/">Home</Nav.Link></Nav.Item>
                 <Nav.Item> <Nav.Link href= "/about">About</Nav.Link></Nav.Item>
                 <Nav.Item> <Nav.Link href= "/gallery">Gallery</Nav.Link></Nav.Item>
+                <Nav.Item> <Nav.Link href= "/portfolio">Portfolio</Nav.Link></Nav.Item>
                 <Nav.Item> <Nav.Link href= "/Contact">Contact</Nav.Link></Nav.Item>
-                <NavDropdown title="Services" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="./Services">Services</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <Nav.Item> <Nav.Link href= "/testimonials">Testimonials</Nav.Link></Nav.Item>
-                </NavDropdown>
+                
             </Nav>
         </Navbar.Collapse>
         </Navbar>

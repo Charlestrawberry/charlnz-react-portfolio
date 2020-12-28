@@ -3,11 +3,38 @@ import Aos from 'aos';
 import { Media } from 'react-bootstrap';
 import styled from 'styled-components';
 
-const Headers = styled.div`
-Headers {
-  
+const Styles = styled.div`
+.header {
+  background-color: rgb(209, 222, 241);
+  padding: 50px;
+  margin: 20px 0 20px 0;
+
+}
+
+@media screen and (max-width: 768px) {
+  .header{
+    padding-right: 100px;
+    margin: 0px 0px;
+    }
+
+  .header-image{
+    height:50%;
+    width: 50%;
+  }
+  p{
+    font-size: 16px;
+  }
+  h5{
+    font-size: 18px;
+  }
 }
 `;
+
+function myImage(e) {
+  e.target.setAttribute('src', "./img/photo.jpg");
+  e.target.setAttribute('alt', "myself");
+  
+}
 
 
 const Herosection = () => {
@@ -17,28 +44,31 @@ const Herosection = () => {
         Aos.init ({ duration: 3000 });
       }, []);
       
-    return (
-        <Headers>
-        <div data-aos= 'zoom-in' className='Herosection-header'>
-            <h2
-            styles={{
-
-
-
+    return (      
+      <div className='container '>
+      
+        <Styles>
+        <div className='header-head'> 
+        <div data-aos= 'zoom-in'>
+            <h2 style={{
+              textAlign: '',
             }}
-            >About Me</h2>
+            
+            >ABOUT ME</h2>
         </div>
-
+      <div className='header'> 
         <Media>
-    <img
+    <img 
+    onClick={myImage}
+    className='header-image align-self-center mr-5'
       width={270}
       height={270}
-      className="align-self-start mr-3"
       src="./img/ceo.jpg"
       alt="Generic placeholder"
     />
+
     <Media.Body>
-      <h5 className='align-self-center mr-5'
+      <h5 className=''
       style={{
         fontSize: '30px',
       }}
@@ -55,7 +85,11 @@ const Herosection = () => {
       </p>
     </Media.Body>
   </Media>
-        </Headers>
+  </div>
+  </div>
+        </Styles>
+        
+  </div>
     )
 }
 

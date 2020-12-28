@@ -6,7 +6,7 @@ import Testimonials from './Testimonials';
 
 
 
-export const Services = () => (
+export const Portfolio = () => (
     <div>
         <div>
             <Card />

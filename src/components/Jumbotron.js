@@ -8,6 +8,7 @@ const Styles = styled.div`
     .jumbotron{
         background: url(${photo}) no-repeat fixed bottom;
         background-size: cover;
+        background-attachment: fixed;
         color: #bbb;
         height: 200px;
         position: relative;
@@ -17,6 +18,7 @@ const Styles = styled.div`
     .Jumbo h1 {
         font-size: 50px;
         align-items: center;
+        text-align: center;
 
     }
     @media screen and (max-width: 768px) {
